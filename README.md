@@ -1,6 +1,6 @@
 # Churn Sub
 
-Projeto de Machine Learning para identificação de futuros players que cancelarão sua assinatua na Gamers Club.
+Projeto de Machine Learning para identificação de futuros players que cancelarão sua assinatura na Gamers Club.
 
 Todo desenvolvimento deste projeto será realizado durante as lives ([twitch.tv/teomewhy](https://www.twitch.tv/teomewhy)), utilizando o Databricks, plataforma Big Data amplamente utilizada no mercado de trabalho.
 
@@ -29,12 +29,12 @@ Nossas lives acontecem todas Terças e Quintas as 9:00AM, seguindo o seguinte ca
 
 ### 1. Introdução e definição do problema
 
-Aqui vamos definir qual é a problemática que vamos atuar. Dando um boa introdução de como funciona a Gamers Club e seus assinaturas.
+Aqui vamos definir qual é a problemática que vamos atuar. Dando um boa introdução de como funciona a Gamers Club e suas assinaturas.
 Desta forma o pessoal consegue entender melhor quais serão as oportunidades envolvidas.
 
 ### 2. Definição das Features Store
 
-A partir dos dados, podemos identificar quais variáveis (atributos) podem fazer mais sentido para este estudo. A ideia é ao final deste encontro tenhamos as principais features preditoras do churn, em formato de Feature Store.
+A partir dos dados, podemos identificar quais variáveis (atributos) podem fazer mais sentido para este estudo. A ideia é que ao final deste encontro tenhamos as principais features preditoras do churn, em formato de Feature Store.
 
 ### 3. Variável resposta e ABT
 
@@ -50,7 +50,7 @@ Após ter treinado diversos algoritmos e testado diferentes métricas de perform
 
 ### 6. Deploy
 
-Para gerr valor a partir dos dados, é necessário que outros usuários e sistemas possam consumir as informações geradas pelo modelo. Então buscamos realizar o deploy deste algoritmo em forma de Batch e/ou Real Time, seja usando agendadores ou APIs.
+Para gerar valor a partir dos dados, é necessário que outros usuários e sistemas possam consumir as informações geradas pelo modelo. Então buscamos realizar o deploy deste algoritmo em forma de Batch e/ou Real Time, seja usando agendadores ou APIs.
 
 ## Sobre as lives
 
