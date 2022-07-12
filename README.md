@@ -32,6 +32,38 @@ Nossas lives acontecem todas Terças e Quintas as 9:00AM, seguindo o seguinte ca
 Aqui vamos definir qual é a problemática que vamos atuar. Dando um boa introdução de como funciona a Gamers Club e seus assinaturas.
 Desta forma o pessoal consegue entender melhor quais serão as oportunidades envolvidas.
 
+Ideias de características para explicar o Churn de Assinaturas:
+
+- [ ] Frequência
+  - [ ] Quantidade de dias
+  - [ ] Quantidade de partidas
+  - [ ] Dia da semana que joga
+ 
+ - [ ] Recencia
+ 
+ - [ ] Performance durante o jobo
+  - [ ] Winrate
+  - [ ] HSrate
+  - [ ] ADR
+  - [ ] KDR
+  - [ ] etc
+  - [ ] Level
+  
+- [ ] Medalhas na lojinha
+  
+- [ ] Histórico de assinaturas
+  - [ ] Quantidade
+  - [ ] Tipo de planos
+  - [ ] Plano atual
+  - [ ] Tempo de plano
+ 
+ - [ ] Idade
+ 
+ - [ ] Tempo de casa
+ 
+ - [ ] Amigos
+
+
 ### 2. Definição das Features Store
 
 A partir dos dados, podemos identificar quais variáveis (atributos) podem fazer mais sentido para este estudo. A ideia é ao final deste encontro tenhamos as principais features preditoras do churn, em formato de Feature Store.
