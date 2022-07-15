@@ -20,8 +20,8 @@ Nossas lives acontecem todas Terças e Quintas as 9:00AM, seguindo o seguinte ca
 
 |Encontro|Data|Tema|Link|
 |---|---|---|---|
-|1|12-07-22|Introdução e definição do problema| :link: |
-|2|14-07-22|Definição das Features Store| :link: |
+|1|12-07-22|Introdução e definição do problema| [:link:](https://www.twitch.tv/videos/1530063562) |
+|2|14-07-22|Definição das Features Store| [:link:](https://www.twitch.tv/videos/1531592209) |
 |3|19-07-22|Variável resposta e ABT| :link: |
 |4|21-07-22|SEMMA| :link: |
 |5|26-07-22|Modelo final| :link: |
