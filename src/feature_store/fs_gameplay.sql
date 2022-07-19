@@ -1,4 +1,3 @@
--- Databricks notebook source
 with tb_level as (
 
   select idPlayer,
@@ -7,8 +6,8 @@ with tb_level as (
 
   from bronze_gc.tb_lobby_stats_player
 
-  where dtCreatedAt < '2022-01-01'
-  and dtCreatedAt >= date_add('2022-01-01',-30)
+  where dtCreatedAt < '{date}'
+  and dtCreatedAt >= date_add('{date}',-30)
 
   order by idPlayer, dtCreatedAt
 ),
@@ -34,7 +33,7 @@ tb_gameplay_stats as (
          count( distinct case when dayofweek(dtCreatedAt) = 6 then date(dtCreatedAt) end) / count(distinct date(dtCreatedAt)) as propDia06,
          count( distinct case when dayofweek(dtCreatedAt) = 7 then date(dtCreatedAt) end) / count(distinct date(dtCreatedAt)) as propDia07,
 
-         min(datediff('2022-01-01', dtCreatedAt)) as qtRecencia,
+         min(datediff('{date}', dtCreatedAt)) as qtRecencia,
 
          avg(flWinner) as winRate,
 
@@ -83,13 +82,13 @@ tb_gameplay_stats as (
 
   from bronze_gc.tb_lobby_stats_player
 
-  where dtCreatedAt < '2022-01-01'
-  and dtCreatedAt >= date_add('2022-01-01',-30)
+  where dtCreatedAt < '{date}'
+  and dtCreatedAt >= date_add('{date}',-30)
 
   group by idPlayer
 )
 
-select '2022-01-01' as dtRef,
+select '{date}' as dtRef,
        t1.*,
        t2.vlLevel
 
