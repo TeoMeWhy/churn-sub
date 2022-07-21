@@ -82,9 +82,3 @@ from tb_features as t1
 left join silver_gc.fs_assinatura as t2
 on t1.idPlayer = t2.idPlayer
 and t1.dtRef = date_sub(t2.dtRef, 30)
-
--- COMMAND ----------
-
-select *
-       
-from silver_gc.abt_model_churn
