@@ -35,28 +35,27 @@ Desta forma o pessoal consegue entender melhor quais serão as oportunidades env
 
 Ideias de características para explicar o Churn de Assinaturas:
 
-- [ ] Frequência
-  - [ ] Quantidade de dias
-  - [ ] Quantidade de partidas
-  - [ ] Dia da semana que joga
+- [X] Frequência
+  - [X] Quantidade de dias
+  - [X] Quantidade de partidas
+  - [X] Dia da semana que joga
  
- - [ ] Recencia
+ - [X] Recencia
  
- - [ ] Performance durante o jobo
-  - [ ] Winrate
-  - [ ] HSrate
-  - [ ] ADR
-  - [ ] KDR
-  - [ ] etc
-  - [ ] Level
+ - [X] Performance durante o jobo
+  - [X] Winrate
+  - [X] HSrate
+  - [X] ADR
+  - [X] KDR
+  - [X] Level
   
-- [ ] Medalhas na lojinha
+- [X] Medalhas na lojinha
   
-- [ ] Histórico de assinaturas
-  - [ ] Quantidade
-  - [ ] Tipo de planos
-  - [ ] Plano atual
-  - [ ] Tempo de plano
+- [X] Histórico de assinaturas
+  - [X] Quantidade
+  - [X] Tipo de planos
+  - [X] Plano atual
+  - [X] Tempo de plano
  
  - [ ] Idade
  
