@@ -125,27 +125,45 @@ fe_onehot = encoding.OneHotEncoder(variables=cat_features)
 # COMMAND ----------
 
 # DBTITLE 1,Modeling
-model = ensemble.RandomForestClassifier(min_samples_leaf=25, n_estimators=250)
+model = ensemble.RandomForestClassifier(random_state=42)
+
+params = {
+    "min_samples_leaf": [10,25,50],
+    "n_estimators":[50,100,250,500]
+}
+
+grid_model = model_selection.GridSearchCV(model,
+                                          params,
+                                          n_jobs=-1,
+                                          scoring='roc_auc',
+                                          cv=3,
+                                          verbose=3
+                                         )
 
 model_pipeline = pipeline.Pipeline( [ ("Missing Flag", fe_missing_flag),
                                       ("Missing Zero", fe_missing_zero),
                                       ("OneHot", fe_onehot),                                     
-                                      ("Classificador", model),
+                                      ("Classificador", grid_model),
                                     ] )
 
 model_pipeline.fit(X_train, y_train)
 
 # COMMAND ----------
 
-y_train_predict = model_pipeline.predict(X_train)
+cv_result = pd.DataFrame(grid_model.cv_results_)
+cv_result
+
+# COMMAND ----------
+
+y_train_predict = grid_model.predict(X_train)
 
 acc_train = metrics.accuracy_score(y_train, y_train_predict)
 print("Acurácia treino:", acc_train)
 
 # COMMAND ----------
 
-y_test_predict = model_pipeline.predict(X_test)
-y_probas = model_pipeline.predict_proba(X_test)
+y_test_predict = grid_model.predict(X_test)
+y_probas = grid_model.predict_proba(X_test)
 
 acc_test = metrics.accuracy_score(y_test, y_test_predict)
 print("Acurácia teste:", acc_test)
@@ -177,7 +195,7 @@ skplt.metrics.plot_lift_curve(y_test, y_probas)
 # COMMAND ----------
 
 # DBTITLE 1,Performance na OOT
-y_probas_oot = model_pipeline.predict_proba(df_oot[features])
+y_probas_oot = grid_model.predict_proba(df_oot[features])
 
 skplt.metrics.plot_roc(df_oot[target], y_probas_oot)
 
