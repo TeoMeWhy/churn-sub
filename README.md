@@ -23,50 +23,27 @@ Nossas lives acontecem todas Terças e Quintas as 9:00AM, seguindo o seguinte ca
 |1|12-07-22|Introdução e definição do problema| [:link:](https://www.twitch.tv/videos/1530063562) |
 |2|14-07-22|Definição das Features Store - Parte I | [:link:](https://www.twitch.tv/videos/1531592209) |
 |3|19-07-22|Definição das Features Store - Parte II | [:link:](https://www.twitch.tv/videos/1536356016) |
-|3|21-07-22|Variável resposta e ABT| [:link:](https://www.twitch.tv/videos/1538383113) |
-|4|26-07-22|SEMMA| :link: |
-|5|28-07-22|Modelo final| :link: |
-|6|02-08-22|Deploy| :link: |
+|4|21-07-22|Variável resposta e ABT| [:link:](https://www.twitch.tv/videos/1538383113) |
+|5|26-07-22|SEMMA| [:link:](https://www.twitch.tv/videos/1543294104) |
+|6|28-07-22|Modelo final| [:link:](https://www.twitch.tv/videos/1545273986) |
+|7|02-08-22|Deploy com MLflow| [:link:](https://www.twitch.tv/videos/1551009420) |
+
+Para acessa a coleção completa dos vídeos, [clique aqui](https://www.twitch.tv/collections/-iVyOjw2ARc93A).
 
 ### 1. Introdução e definição do problema
 
 Aqui vamos definir qual é a problemática que vamos atuar. Dando um boa introdução de como funciona a Gamers Club e seus assinaturas.
 Desta forma o pessoal consegue entender melhor quais serão as oportunidades envolvidas.
 
-Ideias de características para explicar o Churn de Assinaturas:
-
-- [X] Frequência
-  - [X] Quantidade de dias
-  - [X] Quantidade de partidas
-  - [X] Dia da semana que joga
- 
- - [X] Recencia
- 
- - [X] Performance durante o jobo
-  - [X] Winrate
-  - [X] HSrate
-  - [X] ADR
-  - [X] KDR
-  - [X] Level
-  
-- [X] Medalhas na lojinha
-  
-- [X] Histórico de assinaturas
-  - [X] Quantidade
-  - [X] Tipo de planos
-  - [X] Plano atual
-  - [X] Tempo de plano
- 
- - [ ] Idade
- 
- - [ ] Tempo de casa
- 
- - [ ] Amigos
-
-
 ### 2. Definição das Features Store
 
 A partir dos dados, podemos identificar quais variáveis (atributos) podem fazer mais sentido para este estudo. A ideia é ao final deste encontro tenhamos as principais features preditoras do churn, em formato de Feature Store.
+
+Feature Store criadas:
+- [X] Assinatura
+- [X] Gameplay
+- [X] Medalha
+
 
 ### 3. Variável resposta e ABT
 
